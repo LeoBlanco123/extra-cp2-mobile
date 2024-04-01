@@ -16,35 +16,35 @@ export default ({ navigation }) => {
             ingredients: "Mussarela, manjericão, tomate e azeitonas pretas",
             price: "R$ 40,00",
             image: require('../../assets/pizza-margherita.png'),
-            key: 'Pizza Margarita + R$ 40,00'
+            key: 'Pizza Margarita - R$ 40,00'
         },
         {
             name: "Pizza Pepperoni",
             ingredients: "Mussarela, pepperoni fatiado, molho de tomate e orégano",
             price: "R$ 45,00",
             image: require('../../assets/pepperoni-pizza.webp'),
-            key: 'Pizza Pepperoni + R$ 45,00'
+            key: 'Pizza Pepperoni - R$ 45,00'
         },
         {
             name: "Pizza Calabresa",
             ingredients: "Mussarela, calabresa fatiada, cebola, molho de tomate e orégano",
             price: "R$ 42,00",
             image: require('../../assets/calabresa.png'),
-            key: 'Pizza Calabresa + R$ 42,00'
+            key: 'Pizza Calabresa - R$ 42,00'
         },
         {
             name: "Pizza Frango com Catupiry",
             ingredients: "Mussarela, frango desfiado, catupiry, milho, molho de tomate e orégano",
             price: "R$ 48,00",
             image: require('../../assets/pizza_frango.png'),
-            key: 'Pizza Frango com Catupiry + R$ 48,00'
+            key: 'Pizza Frango com Catupiry - R$ 48,00'
         },
         {
             name: "Pizza Quatro Queijos",
             ingredients: "Mussarela, parmesão, provolone, gorgonzola, molho de tomate e orégano",
             price: "R$ 50,00",
             image: require('../../assets/queijo.png'),
-            key: 'Pizza Quatro Queijos + R$ 50,00'
+            key: 'Pizza Quatro Queijos - R$ 50,00'
         }
     ];
 
