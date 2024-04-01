@@ -19,6 +19,10 @@ export default ({ navigation }) => {
         navigation.navigate('(Cardapio)');
     }
 
+    function irParaHome() {
+        navigation.navigate('(Home)');
+    }
+
     return (
         <ScrollView>
             <View style={Estilo.viewSafeAndroid}>
@@ -51,6 +55,11 @@ export default ({ navigation }) => {
                             disabled={!botaoHabilitado}
                         />
                         </View>
+
+                        <View style={Estilo.button}>
+                            <Button color = '#ff0000' title='Voltar' onPress={irParaHome} />               
+                        </View>
+                        
                     </View>
                 </SafeAreaView>
             </View>
