@@ -27,6 +27,19 @@ const Carrinho = ({ navigation }) => {
         }
     };
 
+    const removePreference = async (pizzaKey) => {
+        try {
+            await AsyncStorage.removeItem(pizzaKey);
+            const updatedPreferences = { ...storedPreferences };
+            delete updatedPreferences[pizzaKey];
+            setStoredPreferences(updatedPreferences);
+            Alert.alert('Pizza removida do carrinho!');
+        } catch (error) {
+            console.log('Falha ao remover a pizza do carrinho:', error);
+            Alert.alert('Falha ao remover a pizza do carrinho');
+        }
+    };
+
     function irParaCardapio() {
         navigation.navigate('(Cardapio)')
     }
@@ -47,7 +60,10 @@ const Carrinho = ({ navigation }) => {
                     <View>
                         {Object.keys(storedPreferences).length > 0 ? (
                             Object.keys(storedPreferences).map(key => (
-                                <Text key={key} style={Estilo.preferenceItem}>{key}</Text>
+                                <View key={key} style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+                                    <Text style={Estilo.preferenceItem}>{key}</Text>
+                                    <Button color = '#df0000' title="Remover" onPress={() => removePreference(key)} />
+                                </View>
                             ))
                         ) : (
                             <Text>Nenhuma preferência de pizza selecionada.</Text>
