@@ -11,7 +11,6 @@ export default StyleSheet.create({
     padding: 40,
     fontSize: 40,
     fontWeight: 'bold',
-    fontFamily: 'children',
     color: '#ff2200',
     margin: '5%',
   },
@@ -23,7 +22,6 @@ export default StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.5,
     shadowRadius: 2,
-    elevation: 5,
   },
   divPrin: {
     alignItems: 'center',
@@ -38,10 +36,8 @@ export default StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
     marginBottom: 10,
-    fontFamily: 'sans-serif',
   },
   pizzaText:{
-    fontFamily: 'arial',
     fontSize: 23,
   },
   buttonContainer: {
@@ -56,7 +52,6 @@ export default StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.5,
     shadowRadius: 2,
-    elevation: 5,
   },
   button: {
     flex: 1,
@@ -82,7 +77,6 @@ export default StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.5,
     shadowRadius: 2,
-    elevation: 5,
   },
   preferenceItem: {
     fontSize: 16,
